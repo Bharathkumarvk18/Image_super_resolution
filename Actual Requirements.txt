@@ -1,0 +1,53 @@
+Run Everything on Anaconda Prompt
+------------------------------------------------------------
+create --name myenv python=3.7
+conda activate myenv
+pip install ISR --no-deps  (2.2.0) 
+
+#isr 2.2.0 requires TF-2.0.0
+
+pip show ISR
+pip install numpy
+pip install streamlit
+pip install tensorflow==2.0.0
+
+#isr 2.2.0 requires imageio, which is not installed.
+#isr 2.2.0 requires pyaml, which is not installed.
+#isr 2.2.0 requires tqdm, which is not installed.
+
+pip install imageio  (2.9.0)
+pip install pyaml    (PyYAML-5.4.1 pyaml-20.4.0)
+pip install tqdm     (tqdm-4.60.0)
+
+pip install keras==2.3.0  (tf-2.0.0)
+
+#It automatically installs h5py-3.2.1, we need to degrade to 2.9.0
+
+pip install h5py==2.9.0
+
+conda install -c conda-forge opencv (for opencv)
+
+pip install matplotlib
+
+pip install pillow
+
+pip install numpy 
+ 
+
+
+##################################################################
+Execution:-
+
+Change your current directory to the app.py directory.
+Run:-
+streamlit hello //check if streamlit server working
+
+streamlit run app.py //to run the st server to check on the webpage.
+
+
+
+
+
+
+
+
